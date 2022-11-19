@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Espen Henriksen Snerten">
+        <meta name="description" content="this is the checkout page of game hub">
+        <title>Game Hub checkout</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/b0c9ca440d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="header_nav">
+                    <a href="index.html"><img src="/media/game_hub_logo.png" alt="The Game Hub logo." class="logo_header"></a>
+                    <a href="index.html" class="header_link">Store</a>
+                    <a href="forum.html" class="header_link">Community</a>
+                    <a href="support.html" class="header_active  header_link">Support</a>
+                    <a href="about.html" class="header_link">About</a>
+                </div>
+                <div class="header_signin">
+                    <a href="signin.html">Sign in</a>
+                    <a href="cart.html" class="header_link_cart"><i class="bi bi-cart"></i></a>
+                </div>
+
+                <div class="mobile_menu">
+                    <div>
+                        <a href="index.html"><img src="/media/game_hub_logo.png" alt="The Game Hub logo." class="logo_header"></a>
+                    </div>
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                    <ul class="menu">
+                        <li><input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button></li>
+                    <li><a href="index.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="forum.html">Community</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="cart.html"><i class="bi bi-cart"></i></a></li>
+                    <li><a href="signin.html">Sign in</i></a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </header>
+
+        <main>
+            <div class="cart_form_bg">
+                
+                <div class="cart_game">
+                    <h2>Your Order</h2>
+                    <div class="cart_game_box">
+                        <div class="cart_gameinfo_pic">
+                            <a href="product.html">
+                                <img src="/media/game_cart_pic.jpg" alt="" class="cart_game_img">
+                            </a>
+                        </div>    
+                            <div class="cart_gameinfo">
+                                <p class="p_white">The Witcher 3 Wild Hunt - Game of the Year Edition</p>
+                                <p class="p_white">$ 59.99</p>
+                                <p>Genre: Role-playing - Adventure- Fantasy</p>
+                                <p>Works on: Windows (7,8,10)</p>
+                                <p>Release date: August 30, 2016</p>
+                                <p>Company: CD PROJEKT RED</p>
+                                <p>Rating: PEGI Rating: 18+ (Bad Language, Violence) <img src="/media/pegi.png" alt="" class="cart_pegi"></p>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+
+                <div class="form_bg">
+                    <div class="form_box">
+                        <div class="visa_box">
+                            <div class="visa_box">
+                                <input type="checkbox" checked="checked" name="payment_id">
+                            </div>
+                            <form action="/action_page.php" method="post" class="form_visa">
+                                <label for="payment_id">
+                                    <img src="/media/visa.png" alt="">
+                                    <img src="/media/mastercard.png" alt="">
+                                    <img src="/media/amex.png" alt="">
+                                    <span>Credit/Debit Card</span> 
+                                </label>
+                            </form>
+                        </div>
+
+                        <form action="/action_page.php" method="post" class="form_card">
+                            <label for="card_holder">Card holder</label>
+                            <input type="text" placeholder=" ..." name="card_holder">
+                            <label for="card_nr">Card number</label>
+                            <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" name="card_nr">
+                        </form>
+
+                        <div class="form_cvc_payment_box">
+
+                            <form action="/action_page.php" method="post" class="form_ex_cvc">
+                                <label for="expiry">Expiry date</label>
+                                <input type="text" placeholder="MM/YY" name="expiry">
+                            </form>
+                            <form action="/action_page.php" method="post" class="form_ex_cvc">
+                                <label for="cvc_cvv">CVC/CVV</label>
+                                <input type="text" placeholder="123" name="cvc_cvv">
+                            </form>
+
+                        </div>
+                        <div class="form_cvc_payment_box">
+
+                            <form action="post" method="post" class="payment_checkbox">
+                                <input type="checkbox" checked="checked" name="payment_info">
+                                <label for="payment_info">Save payment information to my accaount</label>
+                            </form>
+
+                        </div>
+
+                        <div class="payment_choice_box">
+                            <form action="post" class="payment_choice top_choice">
+                                <input type="checkbox" name="payment_gpay">
+                                <label for="payment_gpay"><img src="/media/gpay.png" alt=""> Google Pay</label>
+                            </form>
+                            <form action="post" class="payment_choice">
+                                <input type="checkbox" name="payment_ppal">
+                                <label for="payment_paypal"><img src="/media/paypal.png" alt=""> PAYPAL</label>
+                            </form>
+                            <form action="post" class="payment_choice">
+                                <input type="checkbox" name="payment_gamehubpay">
+                                <label for="payment_gamehubpay"><img src="/media/gamehub.png" alt=""> Gamehub Wallet</label>
+                            </form>
+                            <form action="post" class="payment_choice bottom_choice">
+                                <input type="checkbox" name="payment_vipps">
+                                <label for="payment_vipps"><img src="/media/vipps.png" alt=""> Vipps</label>
+                            </form>
+                        </div>
+
+                        <div class="form_cta_box">
+                            <p>Order total: $ 59.99</p>
+                            <button><a href="checkout.html"> Pay For Your Order</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="cart_device">
+            <div class="form_box_device">
+                <div class="visa_box_device">
+                    <div class="visa_box_device_checkbox">
+                        <input type="checkbox" checked="checked" name="payment_id">
+                    </div>
+                    <form action="/action_page.php" method="post" class="form_visa_device">
+                        <label for="payment_id">
+                            <img src="/media/visa.png" alt="">
+                            <img src="/media/mastercard.png" alt="">
+                            <img src="/media/amex.png" alt="">
+                            <span>Credit/Debit Card</span> 
+                        </label>
+                    </form>
+                </div>
+
+                <form action="/action_page.php" method="post" class="form_card_device">
+                    <label for="card_holder">Card holder</label>
+                    <input type="text" placeholder=" ..." name="card_holder">
+                    <label for="card_nr">Card number</label>
+                    <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" name="card_nr">
+                </form>
+
+                <form action="/action_page.php" method="post" class="form_ex_device">
+                    <label for="expiry">Expiry date</label>
+                    <input type="text" placeholder="MM/YY" name="expiry">
+                </form>
+                <form action="/action_page.php" method="post" class="form_ex_device">
+                    <label for="cvc_cvv">CVC/CVV</label>
+                    <input type="text" placeholder="123" name="cvc_cvv">
+                </form>
+
+                <div class="form_cvc_payment_box_device">
+
+                    <form action="post" method="post" class="payment_checkbox_device">
+                        <input type="checkbox" checked="checked" name="payment_info">
+                        <label for="payment_info">Save payment information</label>
+                    </form>
+
+                </div>
+
+                <div class="payment_choice_box_device">
+                    <form action="post" class="payment_device top_device_choice">
+                        <input type="checkbox" name="payment_gpay">
+                        <label for="payment_gpay"><img src="/media/gpay.png" alt=""> Google Pay</label>
+                    </form>
+                    <form action="post" class="payment_device">
+                        <input type="checkbox" name="payment_ppal">
+                        <label for="payment_paypal"><img src="/media/paypal.png" alt=""> PAYPAL</label>
+                    </form>
+                    <form action="post" class="payment_device">
+                        <input type="checkbox" name="payment_gamehubpay">
+                        <label for="payment_gamehubpay"><img src="/media/gamehub.png" alt=""> Gamehub Wallet</label>
+                    </form>
+                    <form action="post" class="payment_device bottom_device_choice">
+                        <input type="checkbox" name="payment_vipps">
+                        <label for="payment_vipps"><img src="/media/vipps.png" alt=""> Vipps</label>
+                    </form>
+                </div>
+
+                <div class="form_cta_box_device">
+                    <p>Order total: $ 59.99</p>
+                    <button><a href="checkout.html"> Pay For Your Order</a></button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <nav>
+                <div class="footer_support">
+                    <a href="support.html" class="contact">Contact Us</a>
+                    <a href="job.html">Career opprtunities</a>
+                    <a href="legal.html">Legal</a>
+                </div>
+                <div class="copy">
+                    &copy;Game Hub. All Rights Reserved.
+                </div>
+                <div class="some">
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </nav>
+        </footer>
+    </body>    
+</html>

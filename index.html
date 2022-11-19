@@ -1,72 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Espen Henriksen Snerten">
-    <title>Game Hub</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Espen Henriksen Snerten">
+      <meta name="description" content="This is the Game Hub homepage">
+      <title>Game Hub homepage</title>
+      <link href="css/styles.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/b0c9ca440d.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+  </head>
 
-<body>
-    <header class="header_nav">
-        <nav>
-          <ul> 
-            <a href="store.html">Store</a>
-            <a href="community.html">Community</a>
-            <a href="support.html">Support</a>
-            <a href="about.html">About</a>
-          </ul>
-          <div>
-          <a href="signin.html">Sign in</a>
-          </div>  
-        </nav>
+  <body>
+    <header>
+      <nav>
+          <div class="header_nav">
+              <a href="index.html"><img src="/media/game_hub_logo.png" alt="The Game Hub logo." class="logo_header"></a>
+              <a href="index.html" class="header_active header_link">Store</a>
+              <a href="forum.html" class="header_link">Community</a>
+              <a href="support.html" class="header_link">Support</a>
+              <a href="about.html" class="header_link">About</a>
+          </div>
+          <div class="header_signin">
+              <a href="signin.html">Sign in</a>
+              <a href="cart.html" class="header_link_cart"><i class="bi bi-cart"></i></a>
+          </div>
+
+          <div class="mobile_menu">
+              <div>
+                  <a href="index.html"><img src="/media/game_hub_logo.png" alt="The Game Hub logo." class="logo_header"></a>
+              </div>
+              <input id="menu-toggle" type="checkbox" />
+              <label class='menu-button-container' for="menu-toggle">
+              <div class='menu-button'></div>
+            </label>
+              <ul class="menu">
+                  <li><input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button></li>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="forum.html">Community</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="cart.html"><i class="bi bi-cart"></i></a></li>
+                <li><a href="signin.html">Sign in</i></a></li>
+              </ul>
+          </div>
+          
+      </nav>
     </header>
 
-    <main>
-     <section class="nav_search">
-        <div>
-          <nav>
-            <a href="index.html">PC</a>
+      <main>
+        <div class="topnav">
+          <div class="topnav_links">
+            <a href="index.html" class="active">PC</a>
             <a href="index_playstation.html">Playstation</a>
             <a href="index_xbox.html">Xbox</a>
             <a href="marketplace.html">Marketplace</a>
-          </nav>
+          </div>
+
+          <form action="/action_page.php" class="search">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+          </form>     
         </div>
-     </section>
+      
+    <section>
+      <div class="hero_section">
+        <a href="sale.html" class="hero_link">
+          <img src="/media/hero_index.jpg" alt="Hero image" class="hero_img">
+          <p class="hero_text">Summer sale</p>
+          <p class="hero_text_bottom hidden_700px">Up to 60%</p>
+        </a>  
+      </div>
+    </section>
 
-     <section>
-      <a href="sale.html">-</a>
-      <h1>Summer sale</h1>
-      <h1>up to 60%</h1>
-     </section>
+    <section>
+      <h1 class="product_category">Best Sellers</h1>
+      <div class="product_row">
 
-     <section>
-        <h2>Best Sellers</h2>
-
-        <div>
-         <img src="/media/Witcher_3.jpg" alt="Cover art of the Witcher 3">
-         <a href="product.html">Add to cart</a>
-         <p>$ 59.99</p>
-         <p>The Witcher 3 Wild Hunt</p>
+        <div class="product">
+          <a href="product.html">
+          <img src="/media/Witcher_3.jpg" alt="cover of best seller">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>The Witcher 3 Wild Hunt</figcaption>
         </div>
-     </section>
 
+        <div class="product hidden_600px">
+          <a href="product.html">
+          <img src="/media/skyrim.jpg" alt="cover of best seller">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>The Elder Scrolls V Skyrim</figcaption>
+        </div>
+
+        <div class="product hidden_1000px">
+          <a href="product.html">
+          <img src="/media/reddead.jpg" alt="cover of best seller">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Red Dead Redemption 2</figcaption>
+        </div>
+
+        <div class="product hidden_1400px">
+          <a href="product.html">
+          <img src="/media/ck3.jpg" alt="cover of best seller">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Crusader Kings 3</figcaption>
+        </div>
+
+        <div class="product hidden_1600px">
+          <a href="product.html">
+          <img src="/media/cyberpunk.jpg" alt="cover of best seller">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Cyberpunk 2077</figcaption>
+        </div>
+
+      </div>  
+
+  <h1 class="product_category">New Releases</h1>
+      <div class="product_row">
+
+        <div class="product">
+          <a href="product.html">
+          <img src="/media/starwars.jpg" alt="cover of new release">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Star Wars Jedi Fallen Order</figcaption>
+        </div>
+
+        <div class="product hidden_600px">
+          <a href="product.html">
+          <img src="/media/coh3.jpg" alt="cover of new release">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Company of Heroes 3</figcaption>
+        </div>
+
+        <div class="product hidden_1000px">
+          <a href="product.html">
+          <img src="/media/fifa.jpg" alt="cover of new release">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>FIFA 23</figcaption>
+        </div>
+
+        <div class="product hidden_1400px">
+          <a href="product.html">
+          <img src="/media/hp.jpg" alt="cover of new release">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Hogwarts Legacy</figcaption>
+        </div>
+
+        <div class="product hidden_1600px">
+          <a href="product.html">
+          <img src="/media/Starfield.jpg" alt="cover of new release">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Starfield</figcaption>
+        </div>
+
+      </div>
+
+      <h1 class="product_category">Market deal of the day</h1>
+      <div class="product_row">
+
+        <div class="product bottom_figcap">
+          <a href="product.html">
+          <img src="/media/Oblivion.jpg" alt="cover of game on sale">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>The Elder Scrolls Oblivion</figcaption>
+        </div>
+
+        <div class="product hidden_600px bottom_figcap">
+          <a href="product.html">
+          <img src="/media/da.jpg" alt="cover of game on sale">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Dragon Age Origins</figcaption>
+        </div>
+
+        <div class="product hidden_1000px bottom_figcap">
+          <a href="product.html">
+          <img src="/media/F3.jpg" alt="cover of game on sale">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Fallout 3</figcaption>
+        </div>
+
+        <div class="product hidden_1400px bottom_figcap">
+          <a href="product.html">
+          <img src="/media/fnv.jpg" alt="cover of game on sale">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Fallout New Vegas</figcaption>
+        </div>
+
+        <div class="product hidden_1600px bottom_figcap" >
+          <a href="product.html">
+          <img src="/media/W2.jpg" alt="cover of game on sale">
+          </a>
+          <div class="product_cta">
+            <a href="product.html">Add to cart <i class="bi bi-cart-plus"></i></a>
+          </div>
+          <div class="product_price">
+          <p>$ 59.99</p>
+          </div>
+          <figcaption>Witcher 2 Assassins of Kings</figcaption>
+        </div>
+
+      </section>
     </main>
 
-    <footer>
-        <nav>
-            <a href="contact.html">Contact Us</a>
-            <a href="job.html">Career opprtunities</a>
-            <a href="legal.html">Legal</a>
-        </nav>
-        <div>
-        &copy;Game Hub. All Rights Reserved.
+    <footer class="footer_relative">
+      <nav>
+        <div class="footer_support">
+          <a href="support.html" class="contact">Contact Us</a>
+          <a href="job.html">Career opprtunities</a>
+          <a href="legal.html">Legal</a>
         </div>
+        <div class="copy">
+          &copy;Game Hub. All Rights Reserved.
+        </div>
+        <div class="some">
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
