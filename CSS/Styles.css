@@ -246,7 +246,6 @@ transition: all 300ms ease;
 }
 
 .product_cta a:hover {
- border: solid 1px rgba(152, 240, 161, 1);
  color: whitesmoke;
 }
 
