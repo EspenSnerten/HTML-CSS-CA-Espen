@@ -603,6 +603,7 @@ img {vertical-align: middle;}
   padding: 0.5rem 2rem;
   transition: all 240ms ease;
   width: 200px;
+  color: black;
 }
 
 .cta_buy {
@@ -1294,9 +1295,15 @@ header nav {
 
 
 @media screen and (max-width: 1200px) {
+
   .topnav_links {
     gap: 1rem;
   }
+.hero_img {
+  filter: none;
+}
+
+
 }
   
 }
