@@ -35,7 +35,7 @@ I made adjustments where necessary to fit my design, one thing that I should hav
 The mobile menu I borrowed from this link: https://codepen.io/alvarotrigo/pen/MWEJEWG
 author: Álvaro
 
-On this one I had to add zed-index and position: relative as without it media content would lay on top of the menu and obstruct both view and touch, I went with this one because of the slick animation, It gave me a lot of ideas for my own personal project.
+On this one I had to add z-index and position: relative as without it media content would lay on top of the menu and obstruct both view and touch, I went with this one because of the slick animation, It gave me a lot of ideas for my own personal project.
 
 
 
