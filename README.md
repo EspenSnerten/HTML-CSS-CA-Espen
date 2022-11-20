@@ -47,7 +47,11 @@ Work process
 
 
 To-Do list
+
 Subject research 
+
 Problem solving
+
 Live testing
+
 Bug fix
