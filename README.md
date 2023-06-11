@@ -75,7 +75,7 @@ Thank you for considering contributing to this project! I appreciate your time a
 
 ## Contact
 
-[My mail account](espensnert@hotmail.com)
+My mail account: (espensnert@hotmail.com)
 
 
 ## Acknowledgments
