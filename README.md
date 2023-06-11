@@ -50,7 +50,7 @@ To conclude this rapport I will first state that everything I failed at along th
 git clone https://github.com/EspenSnerten/HTML-CSS-CA-Espen
 ```
 
-# Contributing to [Semester-Assignment-Gnosis]
+# Contributing to [HTML-CSS-CA-ESPEN]
 
 Thank you for considering contributing to this project! I appreciate your time and effort. This document outlines the guidelines for contributing to my project. Please take a moment to review it before getting started.
 
